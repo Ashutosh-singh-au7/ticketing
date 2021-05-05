@@ -29,7 +29,17 @@ spec:
               valueFrom: 
                 secretKeyRef:
                   name: jwt-secret
-                  key: JWT_KEY 
+                  key: JWT_KEY
+            - name: MAILGUN_DOMAIN
+              valueFrom:
+                secretKeyRef:
+                  name: mailgun-domain
+                  key: MAILGUN_DOMAIN
+            - name: MAILGUN_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: mailgun-api
+                  key: MAILGUN_API_KEY
 ---
 apiVersion: v1
 kind: Service
