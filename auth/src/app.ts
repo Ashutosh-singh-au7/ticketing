@@ -10,8 +10,8 @@ import { signOutRouter } from './routes/signout';
 import { errorHandler, NotFoundError } from '@reapertickets/common';
 import { forgotPasswordRouter } from './routes/forgot-password';
 import {resetPasswordRouter } from './routes/reset-password';
-import { otpVerificationRouter } from './routes/otp-verification';
-import { otpVerifyRouter } from './routes/otp-verify';
+// import { otpVerificationRouter } from './routes/otp-verification';
+// import { otpVerifyRouter } from './routes/otp-verify';
 
 const app = express();
 app.set('trust proxy', true);
@@ -29,8 +29,8 @@ app.use(signInRouter);
 app.use(signOutRouter);
 app.use(forgotPasswordRouter);
 app.use(resetPasswordRouter);
-app.use(otpVerificationRouter);
-app.use(otpVerifyRouter);
+// app.use(otpVerificationRouter);
+// app.use(otpVerifyRouter);
 
 app.all('*',async (req,res)=>{
     throw new NotFoundError();
