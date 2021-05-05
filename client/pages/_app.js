@@ -1,12 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import buildClient from '../api/build-client';
 import Header from '../components/header';
+import Image from 'next/image';
 
 const AppComponent = ({ Component, pageProps, currentUser }) =>{
     return (
         <div>
             <Header currentUser={currentUser} />
             <div className="container" >
+                <Image src ="../public/images/backg.jpg" alt={background} width={250} height={160} />
                 <Component currentUser={currentUser} {...pageProps} />
             </div>
         </div>
