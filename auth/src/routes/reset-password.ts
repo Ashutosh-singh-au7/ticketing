@@ -1,4 +1,3 @@
-require('dotenv').config();
 import express,{Request,Response, Router} from 'express'
 import { User } from '../models/user';
 import jwt from 'jsonwebtoken';

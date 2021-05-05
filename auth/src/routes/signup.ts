@@ -1,4 +1,3 @@
-require('dotenv').config();
 import express,{ Request, Response } from 'express';
 import { body } from 'express-validator';
 import { User } from '../models/user';
