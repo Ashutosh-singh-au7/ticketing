@@ -19,7 +19,7 @@ app.use(json());
 app.use(cors({origin:'https://ticketing.dev/',credentials: true}));
 app.use(cookieSession({
         signed: false,
-        secure: process.env.NODE_ENV !== 'test'
+        secure: false
     })
 );
 
