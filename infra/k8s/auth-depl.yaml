@@ -31,12 +31,12 @@ spec:
                   name: jwt-secret
                   key: JWT_KEY
             - name: MAILGUN_DOMAIN
-              valueFrom: 
+              valueFrom:
                 secretKeyRef:
                   name: mailgun-domain
                   key: MAILGUN_DOMAIN
             - name: MAILGUN_API_KEY
-              valueFrom: 
+              valueFrom:
                 secretKeyRef:
                   name: mailgun-api
                   key: MAILGUN_API_KEY
