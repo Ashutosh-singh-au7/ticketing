@@ -8,7 +8,7 @@ const AppComponent = ({ Component, pageProps, currentUser }) =>{
         <div>
             <Header currentUser={currentUser} />
             <div className="container" >
-                <Image src ="../public/images/backg.jpg" alt={background} width={250} height={160} />
+                <Image src ="../public/images/backg.jpg" alt="background" width={250} height={160} />
                 <Component currentUser={currentUser} {...pageProps} />
             </div>
         </div>
