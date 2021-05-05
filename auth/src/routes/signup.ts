@@ -1,4 +1,3 @@
-require('dotenv').config();
 import express,{ Request, Response } from 'express';
 import { body } from 'express-validator';
 import { User } from '../models/user';
@@ -8,8 +7,8 @@ import { validateRequest, BadRequestError } from '@reapertickets/common';
 
 const router = express.Router();
 
-// const DOMAIN = process.env.MAILGUN_DOMAIN!;
-// const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY! , domain: DOMAIN})
+const DOMAIN = process.env.MAILGUN_DOMAIN!;
+const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY! , domain: DOMAIN})
 
 router.post('/api/users/signup',
 [
