@@ -4,3 +4,9 @@ module.exports = {
         return config;
     }
 };
+
+// module.exports = {
+//     images: {
+//         path: "/images/backg.jpg"
+//     },
+// };
