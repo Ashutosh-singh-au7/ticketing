@@ -17,7 +17,7 @@ spec:
           image: ashutosh7292070445/client
           resources:
             requests:
-              cpu: 350m
+              cpu: 370m
               memory: 350Mi
             limits:
               cpu: 500m
