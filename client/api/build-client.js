@@ -18,3 +18,4 @@ export default ({ req }) => {
 };
 
 //baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local'
+//baseURL: 'http://www.ecommerce-ticketing-app.xyz/'
