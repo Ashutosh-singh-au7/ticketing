@@ -17,7 +17,7 @@ spec:
           image: mongo
           resources:
             requests:
-              cpu: 100m
+              cpu: 120m
               memory: 100Mi
             limits:
               cpu: 200m
